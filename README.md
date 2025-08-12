@@ -1,7 +1,7 @@
-# 🏨 Advanced Hotel Management System
+# 🏨 Advanced Hotel Management System — Backend
 
-An **Advanced Hotel Management System** developed to streamline hotel operations such as room booking, customer check-in/out, billing, and real-time room availability tracking.  
-Designed for **efficiency, scalability, and ease-of-use** for hotel staff and administrators.
+An **Advanced Hotel Management System** built with **Spring Boot** to streamline hotel operations such as room booking, customer check-in/out, billing, and real-time room availability tracking.  
+Designed for **efficiency, scalability, and ease of use** for hotel staff and administrators.
 
 ---
 
@@ -9,7 +9,7 @@ Designed for **efficiency, scalability, and ease-of-use** for hotel staff and ad
 
 ### 🔐 Authentication & Authorization
 - Secure login & registration with password encryption.
-- Role-based access (Admin, User).
+- Role-based access control (Admin, User).
 - Spring Security integration.
 
 ### 🏨 Hotel Management
@@ -30,34 +30,45 @@ Designed for **efficiency, scalability, and ease-of-use** for hotel staff and ad
 
 ## 🛠 Tech Stack
 
-- **Frontend:** JavaScript, React
-- **Backend:** Spring Boot (Java 17)
-- **Database:** PostgreSQL (Neon DB)
-- **Version Control:** Git & GitHub
-- **Cloud Storage**  AWS S3
-- **Build Tool** Maven
-- **Deployment** Render, Vercel(frontend)
-- **Security** Spring Security, BCrypt
+- **Backend Framework:** Spring Boot (Java 17)  
+- **Frontend:** React (JS) — [Frontend Repo](https://github.com/Rohan07github/Hotel-Management-Frontend)  
+- **Database:** PostgreSQL (Neon DB)  
+- **Cloud Storage:** AWS S3  
+- **Build Tool:** Maven  
+- **Deployment:** Render (Backend), Vercel (Frontend)  
+- **Security:** Spring Security, BCrypt  
+- **Version Control:** Git & GitHub  
 
 ---
 
 ## 🚀 Installation & Setup
 
-1. **Clone the repository:**
-
-2. **Install dependencies:**
-
-3. **Configure database:**
-- Create a database (MySQL / PostgreSQL / MongoDB)
-- Update your `.env` or config file with DB credentials
-
-4. **Run the application:**
-
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Rohan07github/Hotel-Management-Backend.git
+   cd Hotel-Management-Backend
 ---
+2. Configure environment variables
+   
+spring.datasource.url=jdbc:postgresql://<NEON_DB_URL>/<DB_NAME>
+spring.datasource.username=<DB_USER>
+spring.datasource.password=<DB_PASSWORD>
+
+aws.s3.bucket-name=<BUCKET_NAME>
+aws.access-key=<ACCESS_KEY>
+aws.secret-key=<SECRET_KEY>
+
+3.mvn clean install
+4.mvn spring-boot:run
+
+5.Access the API
+http://localhost:8080
+
 
 ## 📷 Screenshots
 
 ![alt text](image-1.png)
+
 
 ## 🤝 Contributing
 
@@ -72,9 +83,11 @@ This project is licensed under the **MIT License** – feel free to use and modi
 
 ---
 
-## 👨‍💻 Author
+👨‍💻 Author
+Rohan — Full-stack Developer
 
-**Your Name**  
-  Rohan — GitHub | LinkedIn
-- GitHub: [Rohan07github](https://github.com/Rohan07github)  
-- Email: rohan071209.com
+GitHub: [Rohan07github](https://github.com/Rohan07github)
+
+LinkedIn: www.linkedin.com/in/rohanj07
+
+Email: rohan071209@gmail.com
