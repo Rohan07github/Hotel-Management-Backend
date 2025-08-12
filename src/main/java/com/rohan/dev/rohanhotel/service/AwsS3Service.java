@@ -18,7 +18,8 @@ import com.rohan.dev.rohanhotel.exception.OurException;
 @Service
 public class AwsS3Service {
 
-    private final String bucketName = "rohan-hotel-images";
+    @Value("${aws.s3.bucket.name}")
+    private String bucketName;
 
     @Value("${aws.s3.access.key}")
     private String awsS3AccessKey;
@@ -53,5 +54,5 @@ public class AwsS3Service {
             throw new OurException("Unable to upload image to s3 bucket" + e.getMessage());
         }
     }
-    
+
 }
